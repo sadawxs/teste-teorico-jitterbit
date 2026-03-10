@@ -41,7 +41,7 @@ const mapOrderData = (data) =>
     };
 };
 
-// Criar um novo pedido (POST)
+// POST
 app.post('/order', async (req, res) => 
   {
     try 
@@ -57,7 +57,7 @@ app.post('/order', async (req, res) =>
     }
 });
 
-// Listar todos os pedidos (GET)
+// GET
 app.get('/order/list', async (req, res) => 
   {
     try 
@@ -71,7 +71,7 @@ app.get('/order/list', async (req, res) =>
     }
 });
 
-// ● Obter dados por número do pedido (GET)
+// Obter dados por número do pedido
 app.get('/order/:orderId', async (req, res) => 
   {
     try 
@@ -86,7 +86,7 @@ app.get('/order/:orderId', async (req, res) =>
     }
 });
 
-// ● Atualizar pedido (PUT)
+// PUT
 app.put('/order/:orderId', async (req, res) => 
   {
     try 
